@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: yaamoeen-notification-server
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: VAPID_SUBJECT
+        value: mailto:admin@yaamoeen.com

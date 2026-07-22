@@ -1,0 +1,23 @@
+{
+  "name": "yaamoeen-notification-server",
+  "version": "1.0.0",
+  "description": "خادم إشعارات Render لتطبيق يا معين - إرسال الإشعارات المنبثقة حتى عند إغلاق المتصفح",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "generate-vapid": "node generate-keys.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase-admin": "^13.0.1",
+    "web-push": "^3.6.7"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
